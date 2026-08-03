@@ -30,9 +30,13 @@ Fuera de alcance (a propósito, para mantener la comparación acotada entre los 
 
 ├── src/
 │   ├── mocks/                     # Tu API REST simulada
+
 │   │   ├── browser.js             # Instancia y arranca el worker de MSW
+
 │   │   └── handlers.js            # Contiene la lista en memoria y las rutas (GET, POST, PUT, DELETE)
+
 │   ├── App.vue                    # Tu aplicación completa (formulario, listado, estilos y toda la lógica Vue)
+
 │   └── main.js                    # El punto de entrada que inicia MSW y luego monta Vue
 
 
