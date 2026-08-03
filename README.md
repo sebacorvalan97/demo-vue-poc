@@ -27,6 +27,7 @@ Aplicación de gestión de tareas (to-do list):
 Fuera de alcance (a propósito, para mantener la comparación acotada entre los 3 grupos): autenticación, roles, categorías/etiquetas y persistencia en base de datos real.
 
 ## Estructura del proyecto
+```
 src/
 ├── public/
 │   └── mockServiceWorker.js       # El script interceptor que se generó al correr 'npx msw init'
@@ -41,7 +42,7 @@ src/
 ├── package.json                   # Listado de tus dependencias (Vue y MSW)
 ├── vite.config.js                 # Configuración de Vite
 └── README.md                      # El archivo con el alcance funcional que generamos hace un momento
-
+```
 ## Cómo correrlo
 
 ```bash
