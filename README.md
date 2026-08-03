@@ -27,14 +27,20 @@ Aplicación de gestión de tareas (to-do list):
 Fuera de alcance (a propósito, para mantener la comparación acotada entre los 3 grupos): autenticación, roles, categorías/etiquetas y persistencia en base de datos real.
 
 ## Estructura del proyecto
-
+src/
+├── public/
+│   └── mockServiceWorker.js       # El script interceptor que se generó al correr 'npx msw init'
 ├── src/
-├── mocks/                     # Tu API REST simulada
-│└──browser.js             # Instancia y arranca el worker de MSW
-│└── handlers.js            # Contiene la lista en memoria y las rutas (GET, POST, PUT, DELETE)
-│├── App.vue                    # Tu aplicación completa (formulario, listado, estilos y toda la lógica Vue)
-│└── main.js                    # El punto de entrada que inicia MSW y luego monta Vue
-
+│   ├── mocks/                     # Tu API REST simulada
+│   │   ├── browser.js             # Instancia y arranca el worker de MSW
+│   │   └── handlers.js            # Contiene la lista en memoria y las rutas (GET, POST, PUT, DELETE)
+│   ├── App.vue                    # Tu aplicación completa (formulario, listado, estilos y toda la lógica Vue)
+│   └── main.js                    # El punto de entrada que inicia MSW y luego monta Vue
+├── .gitignore                     # Archivos ignorados por git (creado por Vite)
+├── index.html                     # Plantilla base (creada por Vite)
+├── package.json                   # Listado de tus dependencias (Vue y MSW)
+├── vite.config.js                 # Configuración de Vite
+└── README.md                      # El archivo con el alcance funcional que generamos hace un momento
 
 ## Cómo correrlo
 
